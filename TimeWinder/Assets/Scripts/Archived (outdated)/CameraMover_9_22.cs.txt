@@ -1,0 +1,162 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class CameraMover : MonoBehaviour {
+
+    public enum CamSetting { One, Two, Three, Four, Five};
+
+    public Transform player;
+    public float LowScroll, MidScroll, HighScroll; // values between [0-1]
+    public float CamCoefficient;
+    public float ScrollThreshhold; // [0-1]
+    public bool SecondaryScrollTheshhold;
+    public float ScrollThreshhold2;
+    public float CamTargetRange;
+    public float CamSoftTargetRange;
+
+    private Vector3 PlayerToViewPoint;
+    private Vector3 CamTarget;
+    private Vector3 CamSoftTarget;
+    private bool CamSoftTargetFlag;
+    private CamSetting CamOpt;
+    private new Camera camera;
+    private bool CamTranslateFlag;
+
+	// Use this for initialization
+	void Start () {
+        CamOpt = CamSetting.Five;
+        CamTranslateFlag = false;
+        camera = GetComponent<Camera>();
+        LowScroll = (float)(LowScroll * CamCoefficient);
+        MidScroll = (float)(MidScroll * CamCoefficient);
+        HighScroll = (float)(HighScroll * CamCoefficient);
+    }
+	
+	// Update is called once per frame
+	void Update ()
+    {
+        #region input to change camera modes
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        { CamOpt = CamSetting.One; }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        { CamOpt = CamSetting.Two; }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        { CamOpt = CamSetting.Three; Debug.Log(player.transform.position); Debug.Log(camera.transform.position); }
+        #endregion
+
+        #region camera
+        /*
+        if (CamOpt == CamSetting.One)
+        {
+            if (player.transform.position.x > camera.transform.position.x + ((23 + (2 / 3)) / 2) || player.transform.position.x < camera.transform.position.x - ((23 + (2 / 3)) / 2)
+                || player.transform.position.y > camera.transform.position.y + ((13 + (1 / 3)) / 2) || player.transform.position.y < camera.transform.position.y - ((13 + (1 / 3)) / 2))
+            {
+                camera.transform.position = Vector3.Lerp(camera.transform.position, new Vector3(player.transform.position.x, player.transform.position.y, camera.transform.position.z), HighScroll);
+            }
+            else if (player.transform.position.x > camera.transform.position.x + ((61 + (1 / 3)) /2) || player.transform.position.x < camera.transform.position.x - ((61 + (1 / 3)) / 2)
+                || player.transform.position.y > camera.transform.position.y + ((30 + (2 / 3)) / 2) || player.transform.position.y < camera.transform.position.y - ((30 + (2 / 3)) / 2))
+            {
+                camera.transform.position = Vector3.Lerp(camera.transform.position, new Vector3(player.transform.position.x, player.transform.position.y, camera.transform.position.z), MidScroll);
+            }
+            else
+            {
+                camera.transform.position = Vector3.Lerp(camera.transform.position, new Vector3(player.transform.position.x, player.transform.position.y, camera.transform.position.z), LowScroll);
+            }
+        }
+        else if (CamOpt == CamSetting.Two)
+        {
+            if (CamTranslateFlag != true)
+            {
+                if (player.transform.position.x > camera.transform.position.x + ((23 + (2 / 3)) / 2) || player.transform.position.x < camera.transform.position.x - ((23 + (2 / 3)) / 2)
+                    || player.transform.position.y > camera.transform.position.y + ((13 + (1 / 3)) / 2) || player.transform.position.y < camera.transform.position.y - ((13 + (1 / 3)) / 2))
+                {
+                    CamTarget = player.transform.position;
+                    CamTranslateFlag = true;
+                }
+                else if (player.transform.position.x > camera.transform.position.x + ((61 + (1 / 3)) / 2) || player.transform.position.x < camera.transform.position.x - ((61 + (1 / 3)) / 2)
+                    || player.transform.position.y > camera.transform.position.y + ((30 + (2 / 3)) / 2) || player.transform.position.y < camera.transform.position.y - ((30 + (2 / 3)) / 2))
+                {
+                    camera.transform.position = Vector3.Lerp(camera.transform.position, new Vector3(player.transform.position.x, player.transform.position.y, camera.transform.position.z), MidScroll);
+                }
+            }
+            else
+            {
+                camera.transform.position = Vector3.Lerp(camera.transform.position, new Vector3(player.transform.position.x, player.transform.position.y, camera.transform.position.z), HighScroll);
+                if((camera.transform.position.x < CamTarget.x+1 && camera.transform.position.x > CamTarget.x - 1) && (camera.transform.position.y < CamTarget.y +1 && camera.transform.position.y > CamTarget.y - 1))
+                { CamTranslateFlag = false; }
+            }
+        }
+        else if (CamOpt == CamSetting.Four)
+        {
+            if (CamTranslateFlag != true)
+            {
+                if (player.transform.position.x > camera.transform.position.x + ((47 + (1 / 3)) / 2) || player.transform.position.x < camera.transform.position.x - ((47 + (1 / 3)) / 2)
+                    || player.transform.position.y > camera.transform.position.y + ((26 + (2 / 3)) / 2) || player.transform.position.y < camera.transform.position.y - ((26 + (2 / 3)) / 2))
+                {
+                    CamTarget = player.transform.position;
+                    CamTranslateFlag = true;
+                }
+                //else if (player.transform.position.x > camera.transform.position.x + ((47 + (1 / 3)) / 2) || player.transform.position.x < camera.transform.position.x - ((47 + (1 / 3)) / 2)
+                //    || player.transform.position.y > camera.transform.position.y + ((26 + (2 / 3)) / 2) || player.transform.position.y < camera.transform.position.y - ((26 + (2 / 3)) / 2))
+                //{
+                //    camera.transform.position = Vector3.Lerp(camera.transform.position, new Vector3(player.transform.position.x, player.transform.position.y, camera.transform.position.z), MidScroll);
+                //}
+                else
+                {
+                    camera.transform.position = Vector3.Lerp(camera.transform.position, new Vector3(player.transform.position.x, player.transform.position.y, camera.transform.position.z), MidScroll);
+                }
+            }
+            else
+            {
+                camera.transform.position = Vector3.Lerp(camera.transform.position, new Vector3(player.transform.position.x, player.transform.position.y, camera.transform.position.z), HighScroll);
+                if ((camera.transform.position.x < CamTarget.x + 1 && camera.transform.position.x > CamTarget.x - 1) && (camera.transform.position.y < CamTarget.y + 1 && camera.transform.position.y > CamTarget.y - 1))
+                { CamTranslateFlag = false; }
+            }
+        }*/
+        #endregion
+
+        
+        if(CamOpt == CamSetting.Five)
+        {
+            PlayerToViewPoint = camera.WorldToViewportPoint(player.transform.position);
+            Debug.Log(PlayerToViewPoint);
+            Debug.Log(ScrollThreshhold);
+
+            //Flag checkers, to see if medium or high scroll speed should apply
+            if ((PlayerToViewPoint.x < ScrollThreshhold) || (PlayerToViewPoint.x > 1 - ScrollThreshhold)
+                    || (PlayerToViewPoint.y < ScrollThreshhold) || (PlayerToViewPoint.y > 1 - ScrollThreshhold))
+            {
+                CamTarget = player.transform.position;
+                CamTranslateFlag = true;
+            }
+            else if (SecondaryScrollTheshhold == true && (
+                    (PlayerToViewPoint.x < ScrollThreshhold2) || (PlayerToViewPoint.x > 1 - ScrollThreshhold2)
+                    || (PlayerToViewPoint.y < ScrollThreshhold2) || (PlayerToViewPoint.y > 1 - ScrollThreshhold2)))
+            {
+                CamSoftTarget = player.transform.position;
+                CamSoftTargetFlag = true;
+            }
+
+            //Camera movement handlers
+            if (CamTranslateFlag == true)
+            {
+                Debug.Log("HighScroll");
+                camera.transform.position = Vector3.Lerp(camera.transform.position, new Vector3(player.transform.position.x, player.transform.position.y, camera.transform.position.z), HighScroll);
+                if ((camera.transform.position.x < CamTarget.x + CamTargetRange && camera.transform.position.x > CamTarget.x - CamTargetRange) && (camera.transform.position.y < CamTarget.y + CamTargetRange && camera.transform.position.y > CamTarget.y - CamTargetRange))
+                { CamTranslateFlag = false; }
+            }
+            else if (CamSoftTargetFlag == true)
+            {
+                Debug.Log("MidScroll");
+                camera.transform.position = Vector3.Lerp(camera.transform.position, new Vector3(player.transform.position.x, player.transform.position.y, camera.transform.position.z), MidScroll);
+                if ((camera.transform.position.x < CamSoftTarget.x + CamSoftTargetRange && camera.transform.position.x > CamSoftTarget.x - CamSoftTargetRange) && (camera.transform.position.y < CamSoftTarget.y + CamSoftTargetRange && camera.transform.position.y > CamSoftTarget.y - CamSoftTargetRange))
+                { CamSoftTargetFlag = false; }
+            }
+            else
+            {
+                Debug.Log("LowScroll");
+                camera.transform.position = Vector3.Lerp(camera.transform.position, new Vector3(player.transform.position.x, player.transform.position.y, camera.transform.position.z), LowScroll);
+            }
+        }
+    }
+}
