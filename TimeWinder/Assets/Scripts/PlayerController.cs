@@ -16,14 +16,15 @@ public class PlayerController : MonoBehaviour {
     public float RechargeRate;
 
     [System.NonSerialized]public float Recharge;
-    private bool Rewinding;
+    [System.NonSerialized]public bool Rewinding;
+
     private int RewindIndex;
     private float DeltaAngle;
     private float SpeedMod;
     private float UpdateAngle;
     private Vector3 EulerIendtity;
     private Vector3 Target;
-    private Rigidbody2D RB; //unused atm
+    private Rigidbody RB; //unused atm
     private int PositionMaxSize;
     private List<Vector3> PastPositions;
 
@@ -48,7 +49,7 @@ public class PlayerController : MonoBehaviour {
         { PastPositions.Add(transform.position); }
 
         //Gets the attached Rigidbody2D Component for velocity calculations
-        RB = GetComponent<Rigidbody2D>();
+        RB = GetComponent<Rigidbody>();
 
         //starts the coroutine that independently handles the "PastPositions" list
         StartCoroutine(PosUpdate());
@@ -178,6 +179,11 @@ public class PlayerController : MonoBehaviour {
         Rewinding = var;
         //resumes normal timescale
         Time.timeScale = 1;
+    }
+
+    public void PlayerDamaged()
+    {
+        Debug.Log("Player damaged!");
     }
 
 }
