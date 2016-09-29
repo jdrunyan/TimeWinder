@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour {
     public float MaxTurnPerUpdate;
     public Transform MoverPoint;
     public float RechargeRate;
+    public int Health;
+    public PauseMenu Gameover;
 
     [System.NonSerialized]public float Recharge;
     [System.NonSerialized]public bool Rewinding;
@@ -184,6 +186,12 @@ public class PlayerController : MonoBehaviour {
     public void PlayerDamaged()
     {
         Debug.Log("Player damaged!");
+        Health--;
+        if(Health <= 0)
+        {
+            Gameover.isGameOver = true;
+            Destroy(gameObject);
+        }
     }
 
 }

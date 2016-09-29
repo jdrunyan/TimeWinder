@@ -1,0 +1,243 @@
+Mono path[0] = 'G:/Unity/TimeWinder/TimeWinder/Builds/Proto_Windows/Builds_Data/Managed'
+Mono path[1] = 'G:/Unity/TimeWinder/TimeWinder/Builds/Proto_Windows/Builds_Data/Mono'
+Mono config path = 'G:/Unity/TimeWinder/TimeWinder/Builds/Proto_Windows/Builds_Data/Mono/etc'
+PlayerConnection initialized from G:/Unity/TimeWinder/TimeWinder/Builds/Proto_Windows/Builds_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55371
+Multi-casting "[IP] 73.65.181.7 [Port] 55371 [Flags] 2 [Guid] 2647714625 [EditorId] 3900288710 [Version] 1048832 [Id] WindowsPlayer(MPro) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [73.65.181.7:55371]
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 6900 Series (ID=0x6719)
+    Vendor:   ATI
+    VRAM:     2032 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: G:\Unity\TimeWinder\TimeWinder\Builds\Proto_Windows\Builds_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading G:\Unity\TimeWinder\TimeWinder\Builds\Proto_Windows\Builds_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: G:\Unity\TimeWinder\TimeWinder\Builds\Proto_Windows\Builds_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading G:\Unity\TimeWinder\TimeWinder\Builds\Proto_Windows\Builds_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: G:\Unity\TimeWinder\TimeWinder\Builds\Proto_Windows\Builds_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading G:\Unity\TimeWinder\TimeWinder\Builds\Proto_Windows\Builds_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: G:\Unity\TimeWinder\TimeWinder\Builds\Proto_Windows\Builds_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading G:\Unity\TimeWinder\TimeWinder\Builds\Proto_Windows\Builds_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: G:\Unity\TimeWinder\TimeWinder\Builds\Proto_Windows\Builds_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading G:\Unity\TimeWinder\TimeWinder\Builds\Proto_Windows\Builds_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.246 seconds
+Platform assembly: G:\Unity\TimeWinder\TimeWinder\Builds\Proto_Windows\Builds_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: G:\Unity\TimeWinder\TimeWinder\Builds\Proto_Windows\Builds_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 3200x1080 at -1280,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.019333 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.748533 ms
+System memory in use before: 55.2 MB.
+System memory in use after: 55.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 375.
+Total: 0.270355 ms (FindLiveObjects: 0.021511 ms CreateObjectMapping: 0.027866 ms MarkObjects: 0.201911 ms  DeleteObjects: 0.013200 ms)
+
+PosMax(int): 50 float: 50
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerController:Start() (at G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\PlayerController.cs:61)
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Scripts/PlayerController.cs Line: 61)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ObjMoverScript.FixedUpdate () [0x000a4] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\ObjMoverScript.cs:51 
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Scripts/ObjMoverScript.cs Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ObjMoverScript.FixedUpdate () [0x000a4] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\ObjMoverScript.cs:51 
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Scripts/ObjMoverScript.cs Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ObjMoverScript.FixedUpdate () [0x000a4] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\ObjMoverScript.cs:51 
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Scripts/ObjMoverScript.cs Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ObjMoverScript.FixedUpdate () [0x000a4] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\ObjMoverScript.cs:51 
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Scripts/ObjMoverScript.cs Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ObjMoverScript.FixedUpdate () [0x000a4] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\ObjMoverScript.cs:51 
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Scripts/ObjMoverScript.cs Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ObjMoverScript.FixedUpdate () [0x000a4] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\ObjMoverScript.cs:51 
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Scripts/ObjMoverScript.cs Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ObjMoverScript.FixedUpdate () [0x000a4] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\ObjMoverScript.cs:51 
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Scripts/ObjMoverScript.cs Line: 51)
+
+System.Boolean[]
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+EndLevel:EnemyDied() (at G:\Unity\TimeWinder\TimeWinder\Assets\Unsorted_Placeholders\EndLevel.cs:30)
+EnemyScript:OnTriggerEnter(Collider) (at G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\EnemyScript.cs:33)
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Unsorted_Placeholders/EndLevel.cs Line: 30)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[UnityEngine.Vector3].RemoveAt (Int32 index) [0x00046] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:542 
+  at PlayerController+<PosUpdate>c__Iterator0.MoveNext () [0x00042] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\PlayerController.cs:150 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00020] in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17 
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:61)
+PlayerController:Rewind(Boolean) (at G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\PlayerController.cs:176)
+PlayerController:FixedUpdate() (at G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\PlayerController.cs:138)
+ 
+(Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs Line: 542)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ObjMoverScript.FixedUpdate () [0x000a4] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\ObjMoverScript.cs:51 
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Scripts/ObjMoverScript.cs Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ObjMoverScript.FixedUpdate () [0x000a4] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\ObjMoverScript.cs:51 
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Scripts/ObjMoverScript.cs Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ObjMoverScript.FixedUpdate () [0x000a4] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\ObjMoverScript.cs:51 
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Scripts/ObjMoverScript.cs Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ObjMoverScript.FixedUpdate () [0x000a4] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\ObjMoverScript.cs:51 
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Scripts/ObjMoverScript.cs Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ObjMoverScript.FixedUpdate () [0x000a4] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\ObjMoverScript.cs:51 
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Scripts/ObjMoverScript.cs Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ObjMoverScript.FixedUpdate () [0x000a4] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\ObjMoverScript.cs:51 
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Scripts/ObjMoverScript.cs Line: 51)
+
+System.Boolean[]
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+EndLevel:EnemyDied() (at G:\Unity\TimeWinder\TimeWinder\Assets\Unsorted_Placeholders\EndLevel.cs:30)
+EnemyScript:OnTriggerEnter(Collider) (at G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\EnemyScript.cs:33)
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Unsorted_Placeholders/EndLevel.cs Line: 30)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[UnityEngine.Vector3].RemoveAt (Int32 index) [0x00046] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:542 
+  at PlayerController+<PosUpdate>c__Iterator0.MoveNext () [0x00042] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\PlayerController.cs:150 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00020] in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17 
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:61)
+PlayerController:Rewind(Boolean) (at G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\PlayerController.cs:176)
+PlayerController:FixedUpdate() (at G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\PlayerController.cs:138)
+ 
+(Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs Line: 542)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ObjMoverScript.FixedUpdate () [0x000a4] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\ObjMoverScript.cs:51 
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Scripts/ObjMoverScript.cs Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ObjMoverScript.FixedUpdate () [0x000a4] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\ObjMoverScript.cs:51 
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Scripts/ObjMoverScript.cs Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ObjMoverScript.FixedUpdate () [0x000a4] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\ObjMoverScript.cs:51 
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Scripts/ObjMoverScript.cs Line: 51)
+
+System.Boolean[]
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+EndLevel:EnemyDied() (at G:\Unity\TimeWinder\TimeWinder\Assets\Unsorted_Placeholders\EndLevel.cs:30)
+EnemyScript:OnTriggerEnter(Collider) (at G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\EnemyScript.cs:33)
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Unsorted_Placeholders/EndLevel.cs Line: 30)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[UnityEngine.Vector3].RemoveAt (Int32 index) [0x00046] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:542 
+  at PlayerController+<PosUpdate>c__Iterator0.MoveNext () [0x00042] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\PlayerController.cs:150 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00020] in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17 
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:61)
+PlayerController:Rewind(Boolean) (at G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\PlayerController.cs:176)
+PlayerController:FixedUpdate() (at G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\PlayerController.cs:138)
+ 
+(Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs Line: 542)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ObjMoverScript.FixedUpdate () [0x000a4] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\ObjMoverScript.cs:51 
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Scripts/ObjMoverScript.cs Line: 51)
+
+System.Boolean[]
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+EndLevel:EnemyDied() (at G:\Unity\TimeWinder\TimeWinder\Assets\Unsorted_Placeholders\EndLevel.cs:30)
+EnemyScript:OnTriggerEnter(Collider) (at G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\EnemyScript.cs:33)
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Unsorted_Placeholders/EndLevel.cs Line: 30)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[UnityEngine.Vector3].RemoveAt (Int32 index) [0x00046] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:542 
+  at PlayerController+<PosUpdate>c__Iterator0.MoveNext () [0x00042] in G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\PlayerController.cs:150 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00020] in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17 
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:61)
+PlayerController:Rewind(Boolean) (at G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\PlayerController.cs:176)
+PlayerController:FixedUpdate() (at G:\Unity\TimeWinder\TimeWinder\Assets\Scripts\PlayerController.cs:138)
+ 
+(Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs Line: 542)
+
+clicked end test.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+EndLevel:DisplayMenu(Int32) (at G:\Unity\TimeWinder\TimeWinder\Assets\Unsorted_Placeholders\EndLevel.cs:43)
+UnityEngine.GUI:CallWindowDelegate(WindowFunction, Int32, GUISkin, Int32, Single, Single, GUIStyle) (at C:\buildslave\unity\build\Runtime\IMGUI\Managed\GUI.cs:1896)
+ 
+(Filename: G:/Unity/TimeWinder/TimeWinder/Assets/Unsorted_Placeholders/EndLevel.cs Line: 43)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.523600 ms
+System memory in use before: 55.1 MB.
+System memory in use after: 17.2 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 402.
+Total: 5.750311 ms (FindLiveObjects: 0.018577 ms CreateObjectMapping: 0.022488 ms MarkObjects: 0.346622 ms  DeleteObjects: 5.355289 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 40fc -> priority: 1 

@@ -15,6 +15,6 @@ public class RewindUpdate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        update.text = "Rewind: " + Mathf.Round(PlayerObject.Recharge * 100) + "%";
+        update.text = "Z to Rewind: " + Mathf.Round(PlayerObject.Recharge * 100) + "%";
 	}
 }
